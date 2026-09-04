@@ -1,23 +1,27 @@
 # General
 pnpm-debug.log
 node_modules
+.pnpm-store
+.DS_Store
 .DS_STORE
 .vscode
+.idea
 
 # Foundry files
 cache
+out
 out-via-ir
 lcov.info
+lib
+foundry.lock
+broadcast/*/*/*
+crytic-export
 
-# Config files
+# Config / secrets
 .env
 
-# Avoid ignoring gitkeep
+# Local AI / dev notes (not for commit)
+ai-docs/
+
+# Avoid ignoring gitkeep (e.g. deployments/.gitkeep)
 !/**/.gitkeep
-
-# Keep the latest deployment only
-broadcast/*/*/*
-
-# Out dir
-out
-crytic-export
