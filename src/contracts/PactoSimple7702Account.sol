@@ -3,7 +3,7 @@ pragma solidity 0.8.30;
 
 /* solhint-disable avoid-low-level-calls */
 
-import {IPactoSimple7702Account} from 'interfaces/IPactoSimple7702Account.sol';
+import {IPactoSimple7702Account} from '../interfaces/IPactoSimple7702Account.sol';
 
 import {BaseAccount} from '@account-abstraction/core/BaseAccount.sol';
 import {SIG_VALIDATION_FAILED, SIG_VALIDATION_SUCCESS} from '@account-abstraction/core/Helpers.sol';
