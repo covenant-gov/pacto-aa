@@ -12,6 +12,7 @@
   "scripts": {
     "build": "forge build",
     "build:optimized": "FOUNDRY_PROFILE=optimized forge build",
+    "check:actions-pinned": "node scripts/check-actions-pinned.mjs",
     "coverage": "forge coverage --report summary --report lcov --match-path 'test/unit/*'",
     "deploy:7702:arbitrum": "bash -c 'source .env && forge script Deploy7702Account --rpc-url arbitrum --account $ARBITRUM_DEPLOYER_NAME --broadcast --chain arbitrum -vvvvv && FOUNDRY_PROFILE=verify forge script Verify7702Account --rpc-url arbitrum --chain arbitrum -vvvv'",
     "deploy:7702:mainnet": "bash -c 'source .env && forge script Deploy7702Account --rpc-url mainnet --account $MAINNET_DEPLOYER_NAME --broadcast --chain mainnet -vvvvv && FOUNDRY_PROFILE=verify forge script Verify7702Account --rpc-url mainnet --chain mainnet -vvvv'",
